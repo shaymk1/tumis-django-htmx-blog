@@ -164,3 +164,7 @@ cython_debug/
 extras.txt/
 extras/
 htmlcov/
+.coverage
+.vscode/
+db.sqlite3
+__pycache__
