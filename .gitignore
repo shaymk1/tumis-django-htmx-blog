@@ -168,3 +168,5 @@ htmlcov/
 .vscode/
 db.sqlite3
 __pycache__
+.md
+.txt
