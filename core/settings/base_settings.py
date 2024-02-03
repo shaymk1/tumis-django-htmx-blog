@@ -14,16 +14,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
-# import django
-
-
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "core.settings")
-# django.setup()
-# from core.wsgi import *
-
-
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings.base_settings')
-
 
 load_dotenv()
 

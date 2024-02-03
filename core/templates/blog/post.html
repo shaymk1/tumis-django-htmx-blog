@@ -1,6 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block content %}
-<h1>I am single post</h1>
+    <!-- end of header -->
+
+    <!-- start of post -->
+    <div class="post-container">
+        <img class="featured_img" src="{{ post.image.url }}">
+        <!-- start article details -->
+        <div class="article-info">
+          <div class="article-info-content display-center">
+            <div class="display-center">
+              <img class="author-pic" src="{{ post.author.profile_pic.url }}" alt="">
+              <h6>by {{ post.author }} on {{post.publish|date:"D M Y" }}</h6>
+            </div>
+            
+            <div class="article-meta">
+              {% for tag in post.tags.all %}
+              <span class="tag"><a href="#">{{ tag.name }}</a></span>
+              {% endfor %}
+              <a class="back-button" href="{% url 'blog:posts' %}">All Articles</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of article details -->
+        <hr>   
+        <h1>headline</h1>
+        <h4>sub_headline</h4>
+        <br>
+        <p>{{ post.body|safe }}</p>
+    </div>
+    <!-- end of post -->
 {% endblock  %}
