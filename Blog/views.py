@@ -9,9 +9,9 @@ def index(request):
     return render(request, "blog/index.html", context)
 
 
-def article(request):
-    return render(request, "blog/article.html")
+def post(request):
+    return render(request, "blog/post.html")
 
 
-def articles(request):
-    return render(request, "blog/articles.html")
+def posts(request):
+    return render(request, "blog/posts.html")
